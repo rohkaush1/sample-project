@@ -1,3 +1,4 @@
-master file chanhges
+master file changes
+rebase changes in master
 
 rebase + pill changes 
