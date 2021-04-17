@@ -1,3 +1,6 @@
+ROHIT KAUSHIK
+
+
 git version
 ~ $ git config --global user.name "Rohit Kaushik"
 ~ $ git config --global user.email "rohit.kaushik1@publicissapient.com"
