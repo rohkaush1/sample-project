@@ -1,0 +1,5 @@
+Commit changes: File is commited
+
+Staging changes: File in staging area
+
+Working directory: local working directory changes in file

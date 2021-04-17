@@ -1,0 +1,56 @@
+git version
+~ $ git config --global user.name "Rohit Kaushik"
+~ $ git config --global user.email "rohit.kaushik1@publicissapient.com"
+~ $ git config -- global --list
+user.name=Rohit Kaushik
+user.email=rohit.kaushik1@publicissapient.com
+
+#create a git reporisoty/working directory folder
+~ $ git init projects #only when you want to create a new git project in ur local
+
+
+#clone the project, first goto the project folder
+projects $ git clone URL
+# it will create a git repository/directory of the complete project
+projects $ ls
+project-name/
+
+projects $ cd project-name/
+(master) project-name $ ls
+#all the files of the project are listed
+
+(master) project-name $ git status
+on branch master
+your branch is up-to-date with 'origin/master'
+
+#if we did any changes in file and then check the status
+(master) project-name $ git status
+
+#it will show the untracked file and it's in working directory only. for commiting that changes
+(master) project-name $ git add .
+
+#now the file comes in staging area. If we want to commit that files in local repository
+(master) project-name $ git commit -m "Adding changes"
+
+#if we want to add and commit the files in a single cmd then use
+(master) project-name $ git commit -am "Adding and commiting changes"
+
+#for pushing the changes in actual remote master branch
+(master) project-name $ git push origin master
+
+#if I did the changes in a file 'level1.txt' and add these changes in staging area by using git add level1.txt
+#Now I want to remove that file from staging area to back in working directory the
+(master) project-name $ git reset head level1.txt
+
+#If I want to remove the changes from level1.txt that I've done
+(master) project-name $ git checkout level1.txt
+
+#If I want to rename my file ===========================
+(master) project-name $ git mv current-file-name new-file-name
+#Afer that when you check the git status, then git renamed the file and move it in staging area
+#But if you rename the file without using git cmd, by using git bash "mv" or by using operating system
+#then git deleted the "current-file-name" file and create a new untracked file "new-file-name"
+# now in 2nd case for adding this renamed file in stating area we need
+(master) project-name $ git add -A
+
+
